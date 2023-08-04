@@ -1,0 +1,66 @@
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="index.css">
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body> 
+	<header>
+        <img src='images/hawker-food-image.png'>
+        <div class="heading-title">
+            <h1 class="heading-title-h1">TAKE A SEAT</h1>
+            <h2 class="heading-title-h2">Nourishing Food At Your Fingertips</h2>
+        </div>
+	</header>
+	<main>
+		<div class='menu-item-list' id='menu-item-list'>
+            <!-- Menu list here -->
+        </div>
+        <div class='order-item-list' id='order-item-list'>
+            <!-- Order list here -->
+        </div>
+	</main>
+        <div class='payment-modal' id='payment-modal'>
+            <div class='close-modal-btn-container'>
+                <button class='close-modal-btn' id='close-modal-btn'>X</button>
+                <h3>Enter card details</h3>
+            </div>
+            
+            <form class='payment-modal-inner' id='payment-modal-inner'>
+                <input 
+                    class='payment-details' 
+                    type='name' 
+                    name='name' 
+                    placeholder='Enter your name' 
+                    required/>
+                <input 
+                    class='payment-details' 
+                    type='cardNumber' 
+                    name='cardNumber' 
+                    placeholder='Enter card number' 
+                    required/>
+                <input 
+                    class='payment-details' 
+                    type='cardCVV' 
+                    name='cardCVV' 
+                    placeholder='Enter CVV' 
+                    required/>
+                <button class='pay-button'>Pay</button>
+            </form>
+        </div>
+	<script src="index.js" type="module"></script>
+</body>
+
+</html>
